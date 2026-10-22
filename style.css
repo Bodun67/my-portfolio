@@ -3,8 +3,10 @@
 body { min-height: 100vh; display: grid; place-items: center; margin: 0; padding: 24px; font-family: Arial, sans-serif; color: var(--text); background: var(--bg); }
 .portfolio { width: min(680px, 100%); padding: 48px; border: 1px solid #2c3c56; border-radius: 20px; background: var(--panel); box-shadow: 0 20px 70px #0006; }
 .label { margin: 0 0 16px; color: var(--accent); font-size: 12px; font-weight: bold; letter-spacing: 1.5px; }
+.theme-button { float: right; padding: 9px 12px; border: 1px solid #3c5272; border-radius: 7px; color: var(--accent); background: transparent; font-weight: bold; cursor: pointer; }.theme-button:hover { background: #253957; }
 h1 { margin: 0; font-size: clamp(54px, 10vw, 90px); line-height: .9; letter-spacing: -4px; } h1 span { color: var(--accent); }
 .role { margin: 30px 0 8px; font-size: 20px; font-weight: bold; }.about { max-width: 510px; color: var(--muted); line-height: 1.6; }
 .skills { margin-top: 30px; padding: 18px 20px; border-left: 3px solid var(--accent); background: #0e1a2d; }.skills h2 { margin: 0 0 10px; font-size: 16px; }.skills ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }.skills li { padding: 7px 9px; border-radius: 6px; color: #dce9ff; background: #253957; font-size: 13px; }
 .contacts { margin-top: 36px; padding-top: 22px; border-top: 1px solid #2c3c56; }.contacts h2 { margin: 0 0 10px; font-size: 15px; }.contacts a { color: var(--accent); }.contacts p { color: var(--muted); }
+body.light { --bg: #dfeaff; --panel: #ffffff; --text: #152238; --accent: #08755d; --muted: #506078; } body.light .skills { background: #edf5ff; } body.light .skills li { color: #152238; background: #d5e4f6; } body.light .theme-button { border-color: #9bb0c9; }
 @media (max-width: 500px) { .portfolio { padding: 30px 24px; } }
